@@ -1,0 +1,59 @@
+﻿
+.tableFixHead {
+        overflow-y: auto;
+        height: 300px;
+        text-align:  center;
+        border: 2px solid skyblue;
+        border-collapse: collapse;
+      }
+      .tableFixHead thead th {
+        position: sticky;
+        top: 0;
+      }
+
+/*
+table {
+       border: 1px solid skyblue;
+       border-collapse: collapse;
+        
+        width: 100%;
+      }
+      th,
+      td {
+        padding: 8px 16px;
+        border: 1px solid skyblue;
+      }
+      th {
+        border: 2px solid skyblue;
+        background: #eee;
+        
+      }
+*/
+#tab1 {
+       border: 1px solid purple;
+       border-collapse: collapse;
+       padding: 8px 16px; 
+       
+      }
+      th,
+      td {
+        padding: 8px 16px;
+        border: 1px solid black; 
+      }
+      /* entête */
+      th {
+        border: 2px solid skyblue;
+        background: #eee;
+        
+      }
+
+
+
+.col_population{
+	text-align:  right;
+	}	
+
+
+	h1 {
+  color: green;
+}
