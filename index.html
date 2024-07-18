@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Première carte leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	
+
+    
+    <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
+	 <link rel="stylesheet" href="css/styles1.css"/> 
+	<!--<link rel="stylesheet"  type="text/css" href="https://nicesky89.github.io/4websig/style1.css" crossorigin=""/> -->
+
+	<!-- https://nicesky89.github.io/4websig/style1.css -->
+
+
+    <script type="text/javascript" language="javascript" src="jquery-3.6.1.min.js"></script>
+   
+    <!-- <script src="sources/communes_4326.geojson" type="text/javascript"></script> -->
+    
+
+
+
+
+</head>
+<body>
+	<div id="test1" >hello</div>
+	<center><div id="mapid" style="width: 800px; height: 500px;"></div></center>
+	
+	
+	<div id="tab1">pour tableau</div>
+	<div id="content" >test content</div>
+
+	
+     <!-- <script src="script_test4.js"></script>  -->
+   
+    <script>
+		var mymap2 = L.map('mapid').setView([47.3216, 5.0415], 7);
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 30,
+		attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+		}).addTo(mymap2);
+		
+		var monTab="<table><thead><tr><th>Liste des communes</th><th>Code Insee Commune</th><th>Population</th></tr></thead><tbody>";
+		
+        // Fonction pour créer un élément article HTML pour un feature GeoJSON
+        function createFeatureElement(feature) {
+            
+            const featureElement = document.createElement('article');
+			/*
+            const nameElement = document.createElement('h3');
+            nameElement.textContent = feature.properties.NOM;
+            featureElement.appendChild(nameElement);
+			
+            const descriptionElement = document.createElement('p');
+            descriptionElement.textContent = (feature.properties.INSEE_COM).toString();
+            featureElement.appendChild(descriptionElement);
+            
+			
+			const populationElement = document.createElement('p');
+            populationElement.textContent = (feature.properties.POPULATION).toString();
+            featureElement.appendChild(populationElement);
+			*/
+			
+			let inseecom=(feature.properties.INSEE_COM).toString();
+			let populass=Number.parseFloat(feature.properties.POPULATION);
+
+
+            /*
+            const coordinatesElement = document.createElement('p');
+            coordinatesElement.textContent = `Coordonnées: ${feature.geometry.coordinates.join(', ')}`;
+            featureElement.appendChild(coordinatesElement);
+            */
+
+			monTab += "<TR><Td>" + "<a href='https://fr.wikipedia.org/wiki/" + feature.properties.NOM + "' target='_blank'>" + feature.properties.NOM + "</a>" + "</Td><Td>" + inseecom + "</Td><Td class='col_population'>" + populass + "</Td></Tr>";
+
+            return featureElement;
+        }
+
+        // Fonction pour charger le fichier GeoJSON et créer les éléments HTML
+/* version ok sans tri
+        async function loadAndDisplayFeatures() {
+            try {
+                const response = await fetch('sources/communes_4326.geojson');
+                if (!response.ok) {
+                    throw new Error('Erreur de chargement du fichier GeoJSON');
+                }
+
+                const geojson = await response.json();
+                //const features = geojson.features;
+                const features = geojson.features;
+                
+                //const features_tri=features.sort(function (a, b) {return a.properties.NOM - b.properties.NOM;});
+                document.getElementById("test1").innerHTML = features[0];
+                
+                const contentDiv = document.getElementById('content');
+                
+                L.geoJson(geojson).addTo(mymap2);
+				features.forEach(feature => {
+                //features.sort(function (a, b) {return a.properties.NOM - b.properties.NOM;}).forEach(feature => {
+                    const featureElement = createFeatureElement(feature);
+                    //contentDiv.appendChild(featureElement);
+                });
+                monTab += "</tbody></table>";
+                document.getElementById("tab1").innerHTML = monTab;
+            } catch (error) {
+                console.error('Erreur:', error);
+            }
+        }
+*/
+		
+		// Fonction pour créer un élément article HTML pour un feature GeoJSON
+
+async function loadAndDisplayFeatures() {
+            try {
+                const response = await fetch('sources/communes_4326.geojson');
+                if (!response.ok) {
+                    throw new Error('Erreur de chargement du fichier GeoJSON');
+                }
+
+                const geojson = await response.json();
+                //const features = geojson.features;
+                const features = geojson.features;
+                
+                
+                // Trier les features par name
+				features.sort((a, b) => {
+					if (a.properties.NOM < b.properties.NOM) {
+						return -1;
+					}
+					if (a.properties.NOM > b.properties.NOM) {
+						return 1;
+					}
+				return 0;
+				});
+             
+                
+                //const features_tri=features.sort(function (a, b) {return a.properties.NOM - b.properties.NOM;});
+                //document.getElementById("test1").innerHTML = features[0].properties.NOM;
+                
+                const contentDiv = document.getElementById('content');
+                
+                L.geoJson(geojson).addTo(mymap2);
+				features.forEach(feature => {
+                //features.sort(function (a, b) {return a.properties.NOM - b.properties.NOM;}).forEach(feature => {
+                    const featureElement = createFeatureElement(feature);
+                    //contentDiv.appendChild(featureElement);
+                });
+                monTab += "</tbody></table>";
+                document.getElementById("tab1").innerHTML = "<center>" + monTab + "</center>";
+            } catch (error) {
+                console.error('Erreur:', error);
+            }
+        }
+
+// Charger et afficher les features après le chargement de la page
+window.onload = loadAndDisplayFeatures;
+
+    </script>
+   
+    
+    
+    
+    
+    
+</body>
+</html>
