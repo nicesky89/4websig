@@ -10,15 +10,15 @@
     
     <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
-	 <link rel="stylesheet" href="css/styles1.css"/> 
-	<!--<link rel="stylesheet"  type="text/css" href="https://nicesky89.github.io/4websig/style1.css" crossorigin=""/> -->
+	 <link rel="stylesheet"  type="text/css" href="https://cdn.jsdelivr.net/gh/nicesky89/4websig/css/styles2.css
+"/>
 
-	<!-- https://nicesky89.github.io/4websig/style1.css -->
+	
 
 
-    <script type="text/javascript" language="javascript" src="jquery-3.6.1.min.js"></script>
+    <!-- <script type="text/javascript" language="javascript" src="jquery-3.6.1.min.js"></script> -->
    
-    <!-- <script src="sources/communes_4326.geojson" type="text/javascript"></script> -->
+  
     
 
 
@@ -26,7 +26,7 @@
 
 </head>
 <body>
-	<div id="test1" >hello</div>
+	
 	<center><div id="mapid" style="width: 800px; height: 500px;"></div></center>
 	
 	
@@ -83,7 +83,7 @@
 /* version ok sans tri
         async function loadAndDisplayFeatures() {
             try {
-                const response = await fetch('sources/communes_4326.geojson');
+                const response = await fetch('https://cdn.jsdelivr.net/gh/nicesky89/4websig/sources/communes_4326.geojson');
                 if (!response.ok) {
                     throw new Error('Erreur de chargement du fichier GeoJSON');
                 }
@@ -115,7 +115,7 @@
 
 async function loadAndDisplayFeatures() {
             try {
-                const response = await fetch('sources/communes_4326.geojson');
+                const response = await fetch('https://cdn.jsdelivr.net/gh/nicesky89/4websig/sources/communes_4326.geojson');
                 if (!response.ok) {
                     throw new Error('Erreur de chargement du fichier GeoJSON');
                 }
