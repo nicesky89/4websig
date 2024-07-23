@@ -1,0 +1,445 @@
+
+.Menu1{
+margin-left:0px;
+margin-right:0px;
+/*width:90%;*/
+background-color: #72b034;
+padding-top: 7px;
+padding-bottom:7px;
+}
+
+ul{
+	padding:0px;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+a:hover{
+	color:orange;
+	text-decoration: none;
+}
+.liMenu{
+	display:inline-block;
+
+}
+
+.aMenu{
+	background-color:#72b034;
+	color:white;
+	
+	text-decoration:none;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	border-color:white;
+	border-right: 2px;
+	border-bottom:0px;
+	border-top:0px;
+	border-left:0px;
+	border-style: solid;
+
+}
+.aMenuPageActive{
+	background-color:#72b034;
+	
+	color:orange;
+	text-decoration:none;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	border-right: 2px;
+	border-bottom:0px;
+	border-top:0px;
+	border-left:0px;
+	border-style: solid;
+	border-color: white;
+
+}
+.aMenu:hover{
+	
+	/*color:#db5b42;*/
+	background-color:green;
+	border-color:white;
+}
+
+.barreHaut{
+	background-color: #72b034;
+	min-width: 100%;
+	height: 12px;
+}
+
+.barreIcon{
+	padding-top: 12px;
+	/* padding-bottom: 12px; */
+	padding-right: 50px;
+	text-align:right;
+}
+	/* custom css theme panel */ 
+
+.fa-twitter{
+padding: 10px; 
+font-size: 20px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;  
+background: grey;
+color: white;
+}
+.fa-twitter:hover{
+padding: 10px; 
+font-size: 20px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;  
+background: #72b034;
+color: white;
+}
+.fa-facebook-f {
+padding: 10px;
+padding-right: 15px;
+padding-left: 15px;
+font-size: 20px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;  
+background: grey;
+color: white;
+}
+.fa-facebook-f:hover {
+padding: 10px;
+padding-right: 15px;
+padding-left: 15px;
+font-size: 20px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;  
+background: #72b034;
+color: white;
+}
+.fa-google-plus-g{
+padding: 10px;
+padding-right: 9px;
+padding-left: 9px;
+
+font-size: 20px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;  
+background: grey;
+color: white;
+}
+
+.fa-pinterest{
+padding: 10px; 
+font-size: 20px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;  
+background: grey;
+color: white;
+}
+.fa-pinterest:hover{
+padding: 10px; 
+font-size: 20px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;  
+background: #72b034;
+color: white;
+}
+.fa-head-side-mask{
+padding: 10px; 
+font-size: 20px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;  
+background: grey;
+color: white;
+	
+}
+.fa-head-side-mask:hover{
+padding: 10px; 
+font-size: 20px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 20%;  
+background: #72b034;
+color: white;
+	
+}
+
+
+
+
+
+
+.arch{
+	padding: 6px;
+}
+
+.accroche{
+	background: url(../img/slide.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	min-height: 300px;
+	padding-top: 15px;
+}
+
+.creditPhoto{
+	text-align: right;
+	font-size:7px;
+	color: #6b6b70;
+	font-family:arial;
+	font-weight: normal;
+	font-style:italic;
+
+}
+
+
+.accrocheText{
+	padding-top: 21px;
+	padding-bottom: 21px;
+	padding-right: auto;
+	padding-left: auto;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: red;
+	color:yellow;
+	text-align: center;
+	font-size:21px;
+}
+
+
+
+
+
+h1{
+	font-family:arial;
+	font-size: 30px;
+	/*text-shadow: 0px 0px 9px yellow;*/
+  	color: #6b6b70;
+}
+
+h2{
+	font-family:arial;
+	font-size:21px;
+	color:#db5b42;
+	/*text-shadow: 0px 0px 9px yellow;*/
+}
+
+h3{
+	font-size:15px;
+	font-family:arial;
+	font-weight: normal;
+	/*text-shadow: 0px 0px 9px yellow;*/
+	text-align: justify;
+	color:#6b6c70;
+}
+
+h4{
+	font-size:11px;
+	font-family:arial;
+	font-weight: normal;
+	/*text-shadow: 0px 0px 9px yellow;*/
+	text-align: justify;
+	color:#89867f;
+}
+
+.ensavoirplus{
+	color:white;
+	background-color:#72b034;
+	width:20%;
+	padding-right: 15px;
+	padding-left:15px;
+}
+.ensavoirplus:hover{
+	color:orange;
+	background-color:green;
+	width:20%;
+	padding-right: 15px;
+	padding-left:15px;
+}
+
+.carreNoir{
+	background-color:#6b6c70;
+	color:#6b6c70;
+	padding-right: 12px;
+	padding-left:12px;
+}
+
+article{
+	width:40%;
+	padding:21px;
+	
+}
+
+.contenuArticle{
+	padding-left: 36px;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.apropos{
+	float:left;
+	margin-right: 36px;
+}
+
+.actualites{
+	padding-left: 36px;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.aproposText{
+
+}
+
+.pseudoH3{
+	font-size:15px;
+	font-family:arial;
+	font-weight: normal;
+	
+	color:#6b6c70;
+}
+
+.pseudoH4{
+	font-size:11px;
+	font-family:arial;
+	font-weight: normal;
+	color:#89867f;
+	width:75%;
+}
+
+.mentionsleg{
+	float:left;
+}
+
+
+.photoService{
+	max-width:90%;
+
+
+}
+
+
+@media screen and (max-width:570px) {
+
+	.accroche{
+		background: url(../img/slide.jpg);
+		background-size:cover;
+		background-repeat: no-repeat;
+		min-height: 75px;
+
+		padding-top: 36px;
+	}
+	.accrocheText{
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-right: 5px;
+		padding-left: 5px;
+		width: 300px;
+
+		margin-left: auto;
+		margin-right: auto;
+		background-color: red;
+		color:yellow;
+		/* text-align: center; */
+		font-size:12px;
+	}
+
+	article{
+	width:80%;
+	padding:12px;
+	}
+
+	.mentionsleg{
+	text-align:center;
+
+	float:none;
+	}
+
+
+
+	.fa-twitter{
+	padding: 20px; 
+	font-size: 20px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 90%;  
+	background: grey;
+	color: white;
+	}
+
+	.fa-facebook-f {
+	padding: 20px;
+	padding-right: 25px;
+	padding-left: 25px;
+	font-size: 20px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 90%;  
+	background: grey;
+	color: white;
+	}
+
+	.fa-google-plus-g{
+	padding: 20px;
+	padding-right: 19px;
+	padding-left: 19px; 
+	font-size: 20px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 90%;  
+	background: grey;
+	color: white;
+	}
+
+	.fa-pinterest{
+	padding: 20px; 
+	font-size: 20px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 90%;  
+	background: grey;
+	color: white;
+	}
+
+
+	.barreIcon{
+	padding-top: 21px;
+	padding-bottom: 21px;
+	padding-right: 0px;
+	padding-left:0px;
+	text-align:center;
+}
+
+.photoService{
+	max-width:80%;
+
+
+}
+.photoService2{
+	max-width:10%;
+	
+
+}
+
+}
