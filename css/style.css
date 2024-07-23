@@ -191,7 +191,7 @@ color: white;
 }
 
 .accroche{
-	background: url(../img/slide.jpg);
+	background: url(https://cdn.jsdelivr.net/gh/nicesky89/4websig/img/slide.jpg);
 	background-size:cover;
 	background-repeat: no-repeat;
 	min-height: 300px;
