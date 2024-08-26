@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "chef_lieu",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000072236010", "NOM": "Mairie de Moliets-et-Maa", "ID_COM": "COMMUNE_0000000009758908", "communes_INSEE_COM": "40187", "communes_POPULATION": 1264, "communes_NOM": "Moliets-et-Maa" }, "geometry": { "type": "Point", "coordinates": [ -1.358854183158816, 43.848626963975292 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000072238751", "NOM": "Mairie de Messanges", "ID_COM": "COMMUNE_0000000009759136", "communes_INSEE_COM": "40181", "communes_POPULATION": 991, "communes_NOM": "Messanges" }, "geometry": { "type": "Point", "coordinates": [ -1.378418802901202, 43.814570960320317 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000073646992", "NOM": "Mairie de Linxe", "ID_COM": "COMMUNE_0000000009758673", "communes_INSEE_COM": "40155", "communes_POPULATION": 1541, "communes_NOM": "Linxe" }, "geometry": { "type": "Point", "coordinates": [ -1.245575709084175, 43.920508263457513 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000073647314", "NOM": "Mairie de Saint-Michel-Escalus", "ID_COM": "COMMUNE_0000000009758906", "communes_INSEE_COM": "40276", "communes_POPULATION": 316, "communes_NOM": "Saint-Michel-Escalus" }, "geometry": { "type": "Point", "coordinates": [ -1.261656202198792, 43.894079516604627 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000073651302", "NOM": "Mairie de Magescq", "ID_COM": "COMMUNE_0000000009759374", "communes_INSEE_COM": "40168", "communes_POPULATION": 2493, "communes_NOM": "Magescq" }, "geometry": { "type": "Point", "coordinates": [ -1.216011695312801, 43.78088310660555 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000073651585", "NOM": "Mairie de Vieux-Boucau-les-Bains", "ID_COM": "COMMUNE_0000000009759376", "communes_INSEE_COM": "40328", "communes_POPULATION": 1660, "communes_NOM": "Vieux-Boucau-les-Bains" }, "geometry": { "type": "Point", "coordinates": [ -1.401073143941304, 43.785884141683262 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000073651615", "NOM": "Mairie d'Azur", "ID_COM": "COMMUNE_0000000009759135", "communes_INSEE_COM": "40021", "communes_POPULATION": 942, "communes_NOM": "Azur" }, "geometry": { "type": "Point", "coordinates": [ -1.303023631545385, 43.799045910531198 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000073654065", "NOM": "Mairie d'Herm", "ID_COM": "COMMUNE_0000000009759134", "communes_INSEE_COM": "40123", "communes_POPULATION": 1175, "communes_NOM": "Herm" }, "geometry": { "type": "Point", "coordinates": [ -1.145025379923832, 43.806141966098359 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000090399460", "NOM": "Mairie de Soustons", "ID_COM": "COMMUNE_0000000009759375", "communes_INSEE_COM": "40310", "communes_POPULATION": 8421, "communes_NOM": "Soustons" }, "geometry": { "type": "Point", "coordinates": [ -1.326975345314231, 43.755600709916195 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000091340573", "NOM": "Mairie de Castets", "ID_COM": "COMMUNE_0000000009758905", "communes_INSEE_COM": "40075", "communes_POPULATION": 2505, "communes_NOM": "Castets" }, "geometry": { "type": "Point", "coordinates": [ -1.145312431964137, 43.881990643095016 ] } },
+{ "type": "Feature", "properties": { "ID": "SURFACTI0000000073648326", "NOM": "Mairie de Léon", "ID_COM": "COMMUNE_0000000009758907", "communes_INSEE_COM": "40150", "communes_POPULATION": 2057, "communes_NOM": "Léon" }, "geometry": { "type": "Point", "coordinates": [ -1.303241101975686, 43.875947471211305 ] } }
+]
+}
